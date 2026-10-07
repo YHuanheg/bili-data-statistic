@@ -10,6 +10,7 @@ import {
 } from 'nb-ui';
 import { useDialog, useMessage, useModal, useNotification, useThemeVars } from 'naive-ui';
 import DmDataLoaderPanel from '../components/DmDataLoaderPanel';
+import DmCollectionPanel from '../components/DmCollectionPanel';
 import DmChartManager from '../components/DmChartManager';
 import InteractiveGraphPanel from '../components/InteractiveGraphPanel';
 import PanelSettings from '../components/PanelSettings';
@@ -18,6 +19,7 @@ import UserPanel from './UserPanel.vue';
 import mountStyle from './DmPanel.style.cssr.js';
 import { segmentWords } from '../workers/segmentWordsWorker';
 import { downloadHtmlText, injectPanelData } from '../utils/panelExport';
+import { extractCollectionInfo } from '../utils/dmCollection';
 import storage from '../utils/storage';
 import * as utils from '../utils/utils';
 import { runtimeCdnUrls } from '../config/cdn';
@@ -238,6 +240,17 @@ const isListExpanded = computed(() => expandedNames.value.includes('list'));
 
 const isInteractiveVideo = computed(() => {
   return Boolean(arcMgr.value?.data?.player_info?.interaction?.graph_version);
+});
+
+/**
+ * 当前稿件所属的合集/视频列表信息（合集、番剧、多 P 视频）。
+ * 依赖 archiveInfo 以便在切换稿件后重新计算。
+ */
+const collectionInfo = computed(() => {
+  if (isReadonlyMode.value) return null;
+  if (!archiveInfo.value?.id) return null;
+  if (!arcMgr.value?.data) return null;
+  return extractCollectionInfo(arcMgr.value);
 });
 
 const viewPoints = computed(() => {
@@ -1071,6 +1084,12 @@ onBeforeUnmount(() => {
                 :key="archiveInfo.id || currentArchiveId" :arc-mgr="arcMgr" :dm-mgr="dmMgr" :to="props.to"
                 @sync-data="syncDanmakuState" @set-error="setPanelError"
                 @initial-load-finished="handleInitialLoadFinished" />
+            </n-collapse-item>
+
+            <n-collapse-item v-if="collectionInfo" name="collection"
+              :title="collectionInfo.panelTitle">
+              <dm-collection-panel :arc-mgr="arcMgr" :dm-mgr="dmMgr" :collection="collectionInfo"
+                :to="props.to" @set-error="setPanelError" />
             </n-collapse-item>
 
             <n-collapse-item v-if="commandDms.length" name="command"

@@ -3,6 +3,8 @@ import mountStyle from './style.cssr.js';
 import storage from '../../utils/storage';
 import { useMessage } from 'naive-ui';
 import { InfoCircle } from '@vicons/tabler';
+import { buildDanmakuXml, buildDmXmlFileName, pickXmlMetaFromView } from '../../utils/dmXml';
+import { downloadText } from '../../utils/download';
 
 const props = defineProps({
   arcMgr: {
@@ -55,6 +57,7 @@ const downloadMenuOptions = [
       { label: '缩进 4', key: 'json:4' },
     ],
   },
+  { label: 'XML（标准弹幕格式）', key: 'xml:current' },
 ];
 
 const loadProgress = reactive({
@@ -319,7 +322,29 @@ const downloadDanmakuData = (indentMode = 2) => {
   URL.revokeObjectURL(url);
 };
 
+const downloadDanmakuXml = () => {
+  if (!props.dmMgr) return;
+  const list = props.dmMgr.data?.danmaku_list || [];
+  if (!list.length) {
+    emit('set-error', '当前没有弹幕数据，请先载入弹幕');
+    return;
+  }
+  const info = props.dmMgr.info || props.arcMgr?.info || {};
+  const cid = info.cid ?? props.arcMgr?.info?.cid ?? '';
+  const xml = buildDanmakuXml(list, {
+    cid,
+    ...pickXmlMetaFromView(props.dmMgr.data?.danmaku_view),
+  });
+  const title = info.title || props.arcMgr?.info?.title || '';
+  downloadText(xml, buildDmXmlFileName({ title, cid }), 'text/xml;charset=utf-8');
+  message.success(`已导出 ${list.length.toLocaleString()} 条弹幕（XML）`);
+};
+
 const handleDownloadMenuSelect = (key) => {
+  if (key === 'xml:current') {
+    downloadDanmakuXml();
+    return;
+  }
   if (key === 'json:none') {
     downloadDanmakuData('none');
     return;

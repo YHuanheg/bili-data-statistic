@@ -569,7 +569,7 @@ ${style2}
       vue.onBeforeMount(mountStyle2);
     }
   }
-  const style$d = c$3([
+  const style$e = c$3([
     cB$2(
       "bds-shell",
       css$1`
@@ -585,8 +585,8 @@ ${style2}
       ]
     )
   ]);
-  function mountStyle$d(mountTarget) {
-    useTheme$1("bds-app-style", style$d, mountTarget);
+  function mountStyle$e(mountTarget) {
+    useTheme$1("bds-app-style", style$e, mountTarget);
   }
   const ROOT_KEY = "bds-storage";
   const toSegments = (path) => String(path || "").split(".").filter(Boolean);
@@ -1054,7 +1054,7 @@ ${style2}
     },
     Statistic
   });
-  const style$c = c$3([
+  const style$d = c$3([
     cB$2(
       "bds-entry-launcher",
       css$1`
@@ -1110,11 +1110,11 @@ ${style2}
       ]
     )
   ]);
-  function mountStyle$c(mountTarget) {
-    useTheme$1("bds-entry-launcher-style", style$c, mountTarget);
+  function mountStyle$d(mountTarget) {
+    useTheme$1("bds-entry-launcher-style", style$d, mountTarget);
   }
   const _hoisted_1$w = { class: "bds-entry-launcher__text" };
-  const _sfc_main$e = {
+  const _sfc_main$f = {
     __name: "EntryLauncher",
     props: {
       label: { type: String, default: "弹幕统计" }
@@ -1124,7 +1124,7 @@ ${style2}
       const props2 = __props2;
       const emit2 = __emit2;
       const styleMountTarget2 = vue.inject("styleMountTarget", null);
-      mountStyle$c(styleMountTarget2);
+      mountStyle$d(styleMountTarget2);
       const themeVars = naiveUi.useThemeVars();
       const cssVars = vue.computed(() => {
         const primary = themeVars.value.primaryColor;
@@ -1176,7 +1176,7 @@ ${style2}
       };
     }
   };
-  const style$b = cB$2(
+  const style$c = cB$2(
     "bds-panel-shell",
     [
       cE$2(
@@ -1208,11 +1208,11 @@ ${style2}
       )
     ]
   );
-  function mountStyle$b(mountTarget) {
-    useTheme$1("bds-panel-shell-style", style$b, mountTarget);
+  function mountStyle$c(mountTarget) {
+    useTheme$1("bds-panel-shell-style", style$c, mountTarget);
   }
   const _hoisted_1$v = { class: "bds-panel-shell" };
-  const _sfc_main$d = {
+  const _sfc_main$e = {
     __name: "PanelShell",
     props: {
       show: {
@@ -1237,7 +1237,7 @@ ${style2}
       const props2 = __props2;
       const emit2 = __emit2;
       const styleMountTarget2 = vue.inject("styleMountTarget", null);
-      mountStyle$b(styleMountTarget2);
+      mountStyle$c(styleMountTarget2);
       const themeVars = naiveUi.useThemeVars();
       const panelEl = vue.ref(null);
       const panelStyle = vue.computed(() => {
@@ -1295,7 +1295,7 @@ ${style2}
       };
     }
   };
-  const style$a = cB$2(
+  const style$b = cB$2(
     "bds-upload-screen",
     css$1`
     min-height: 100vh;
@@ -1350,10 +1350,10 @@ ${style2}
       )
     ]
   );
-  function mountStyle$a(mountTarget) {
-    useTheme$1("bds-upload-screen-style", style$a, mountTarget);
+  function mountStyle$b(mountTarget) {
+    useTheme$1("bds-upload-screen-style", style$b, mountTarget);
   }
-  const _sfc_main$c = {
+  const _sfc_main$d = {
     __name: "UploadScreen",
     props: {
       hasData: {
@@ -1374,7 +1374,7 @@ ${style2}
       const props2 = __props2;
       const emit2 = __emit2;
       const styleMountTarget2 = vue.inject("styleMountTarget", null);
-      mountStyle$a(styleMountTarget2);
+      mountStyle$b(styleMountTarget2);
       const themeVars = naiveUi.useThemeVars();
       const uploadError = vue.ref("");
       const fileList = vue.ref([]);
@@ -2457,7 +2457,7 @@ ${style2}
     useTheme("nb-archive-info-card", style$6$1);
   }
   const _hoisted_1$d = { class: "nb-archive-info-card__title" };
-  const _hoisted_2$5 = {
+  const _hoisted_2$5$1 = {
     key: 0,
     class: "nb-archive-info-card__subtitle"
   };
@@ -2538,7 +2538,7 @@ ${style2}
                 }, {
                   default: vue.withCtx(() => [
                     vue.createElementVNode("span", _hoisted_1$d, vue.toDisplayString(props2.archiveInfo?.title || "加载中..."), 1),
-                    props2.archiveInfo?.subtitle ? (vue.openBlock(), vue.createElementBlock("span", _hoisted_2$5, vue.toDisplayString(props2.archiveInfo.subtitle), 1)) : vue.createCommentVNode("", true),
+                    props2.archiveInfo?.subtitle ? (vue.openBlock(), vue.createElementBlock("span", _hoisted_2$5$1, vue.toDisplayString(props2.archiveInfo.subtitle), 1)) : vue.createCommentVNode("", true),
                     props2.archiveInfo?.id && vue.unref(idUrl) ? (vue.openBlock(), vue.createBlock(_component_n_button, {
                       key: 1,
                       text: "",
@@ -2780,7 +2780,7 @@ ${style2}
       return vue.openBlock(), vue.createElementBlock("svg", _hoisted_1$9, _cache[0] || (_cache[0] = [vue.createStaticVNode('<g fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 20l1.3-3.9A9 8 0 1 1 7.7 19L3 20"></path><path d="M12 12v.01"></path><path d="M8 12v.01"></path><path d="M16 12v.01"></path></g>', 1)]));
     }
   });
-  const _hoisted_1$8 = {
+  const _hoisted_1$8$1 = {
     xmlns: "http://www.w3.org/2000/svg",
     "xmlns:xlink": "http://www.w3.org/1999/xlink",
     viewBox: "0 0 24 24"
@@ -2788,7 +2788,7 @@ ${style2}
   vue.defineComponent({
     name: "Photo",
     render: function render52(_ctx, _cache) {
-      return vue.openBlock(), vue.createElementBlock("svg", _hoisted_1$8, _cache[0] || (_cache[0] = [vue.createStaticVNode('<g fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M15 8h.01"></path><rect x="4" y="4" width="16" height="16" rx="3"></rect><path d="M4 15l4-4a3 5 0 0 1 3 0l5 5"></path><path d="M14 14l1-1a3 5 0 0 1 3 0l2 2"></path></g>', 1)]));
+      return vue.openBlock(), vue.createElementBlock("svg", _hoisted_1$8$1, _cache[0] || (_cache[0] = [vue.createStaticVNode('<g fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M15 8h.01"></path><rect x="4" y="4" width="16" height="16" rx="3"></rect><path d="M4 15l4-4a3 5 0 0 1 3 0l5 5"></path><path d="M14 14l1-1a3 5 0 0 1 3 0l2 2"></path></g>', 1)]));
     }
   });
   const _hoisted_1$7$1 = {
@@ -2985,8 +2985,8 @@ ${style2}
   }
   const _hoisted_1$5$1 = { class: "nb-command-dm-timeline__icon-wrap" };
   const _hoisted_2$4$1 = ["src"];
-  const _hoisted_3$3 = { class: "nb-command-dm-timeline__time" };
-  const _hoisted_4$3 = { class: "nb-command-dm-timeline__line" };
+  const _hoisted_3$3$1 = { class: "nb-command-dm-timeline__time" };
+  const _hoisted_4$3$1 = { class: "nb-command-dm-timeline__line" };
   const _hoisted_5$2 = { class: "nb-command-dm-timeline__title" };
   const _hoisted_6$2 = {
     key: 0,
@@ -3132,7 +3132,7 @@ ${style2}
                     ])
                   ]),
                   header: vue.withCtx(() => [
-                    vue.createElementVNode("span", _hoisted_3$3, vue.toDisplayString(item.timestamp), 1)
+                    vue.createElementVNode("span", _hoisted_3$3$1, vue.toDisplayString(item.timestamp), 1)
                   ]),
                   default: vue.withCtx(() => [
                     vue.createVNode(_component_n_card, {
@@ -3141,7 +3141,7 @@ ${style2}
                     }, {
                       default: vue.withCtx(() => [
                         item.command === "#VOTE#" ? (vue.openBlock(), vue.createElementBlock(vue.Fragment, { key: 0 }, [
-                          vue.createElementVNode("div", _hoisted_4$3, [
+                          vue.createElementVNode("div", _hoisted_4$3$1, [
                             vue.createVNode(_component_n_text, { type: "success" }, {
                               default: vue.withCtx(() => [..._cache[0] || (_cache[0] = [
                                 vue.createTextVNode("【投票】", -1)
@@ -3954,16 +3954,16 @@ ${style2}
     class: "nb-danmaku-table__cell",
     style: { width: "70px" }
   };
-  const _hoisted_5 = {
+  const _hoisted_5$1 = {
     class: "nb-danmaku-table__cell nb-danmaku-table__content-cell",
     style: { flex: 1 }
   };
-  const _hoisted_6 = {
+  const _hoisted_6$1 = {
     key: 1,
     class: "nb-danmaku-table__cell nb-danmaku-table__content-cell",
     style: { flex: 1 }
   };
-  const _hoisted_7 = {
+  const _hoisted_7$1 = {
     class: "nb-danmaku-table__cell",
     style: { width: "170px", borderRight: "none" }
   };
@@ -4186,11 +4186,11 @@ ${style2}
                   onSelect: (key) => onDropdownSelect(key, item.__raw, item.__index)
                 }, {
                   default: vue.withCtx(() => [
-                    vue.createElementVNode("div", _hoisted_5, vue.toDisplayString(item.content || ""), 1)
+                    vue.createElementVNode("div", _hoisted_5$1, vue.toDisplayString(item.content || ""), 1)
                   ]),
                   _: 2
-                }, 1032, ["to", "options", "onSelect"])) : (vue.openBlock(), vue.createElementBlock("div", _hoisted_6, vue.toDisplayString(item.content || ""), 1)),
-                vue.createElementVNode("div", _hoisted_7, vue.toDisplayString(vue.unref(formatTimestamp)(item.ctime)), 1)
+                }, 1032, ["to", "options", "onSelect"])) : (vue.openBlock(), vue.createElementBlock("div", _hoisted_6$1, vue.toDisplayString(item.content || ""), 1)),
+                vue.createElementVNode("div", _hoisted_7$1, vue.toDisplayString(vue.unref(formatTimestamp)(item.ctime)), 1)
               ], 14, _hoisted_3$4)
             ]),
             _: 1
@@ -4204,7 +4204,7 @@ ${style2}
       };
     }
   };
-  const style$9 = c([
+  const style$a = c([
     cB(
       "nb-user-card",
       css`
@@ -4289,12 +4289,12 @@ ${style2}
       ]
     )
   ]);
-  function mountStyle$9() {
-    useTheme("nb-user-card", style$9);
+  function mountStyle$a() {
+    useTheme("nb-user-card", style$a);
   }
   const _hoisted_1$e = ["href"];
   const _hoisted_2$6 = ["href"];
-  const _sfc_main$b = Object.assign({ name: "UserCard" }, {
+  const _sfc_main$c = Object.assign({ name: "UserCard" }, {
     __name: "UserCard",
     props: {
       userCard: { type: Object, default: () => ({}) },
@@ -4365,7 +4365,7 @@ ${style2}
           "--n-font-weight-strong": themeVars.value.fontWeightStrong
         };
       });
-      mountStyle$9();
+      mountStyle$a();
       return (_ctx, _cache) => {
         const _component_n_text = naiveUi.NText;
         const _component_n_tag = naiveUi.NTag;
@@ -4726,7 +4726,7 @@ ${style2}
     mountOne(binderStyle, "vueuc/binder");
     mountedDefault = true;
   }
-  const style$8 = c$3([
+  const style$9 = c$3([
     cB$2(
       "bds-dm-loader-panel",
       css$1`
@@ -4776,11 +4776,111 @@ ${style2}
       ]
     )
   ]);
-  function mountStyle$8(mountTarget) {
-    useTheme$1("bds-dm-loader-panel-style", style$8, mountTarget);
+  function mountStyle$9(mountTarget) {
+    useTheme$1("bds-dm-loader-panel-style", style$9, mountTarget);
   }
-  const _hoisted_1$7 = { class: "bds-dm-loader-panel" };
-  const _sfc_main$a = {
+  const ILLEGAL_FILE_CHARS = /[\\/:*?"<>|\u0000-\u001f]/g;
+  const WINDOWS_RESERVED = /^(con|prn|aux|nul|com[1-9]|lpt[1-9])$/i;
+  const sanitizeFileName = (value, fallback = "bds-data", maxLength = 120) => {
+    const text = String(value ?? "").replace(ILLEGAL_FILE_CHARS, "_").replace(/\s+/g, " ").trim().replace(/^[.\s]+/, "").replace(/[.\s]+$/, "");
+    let name = text.slice(0, Math.max(1, maxLength)).trim();
+    if (!name) return fallback;
+    if (WINDOWS_RESERVED.test(name)) name = `${name}_`;
+    return name;
+  };
+  const downloadBlob = (blob, fileName) => {
+    const url = URL.createObjectURL(blob);
+    const link = document.createElement("a");
+    link.href = url;
+    link.download = fileName;
+    link.style.display = "none";
+    document.body.appendChild(link);
+    link.click();
+    link.remove();
+    setTimeout(() => URL.revokeObjectURL(url), 1e3);
+  };
+  const downloadText = (text, fileName, mime = "text/plain;charset=utf-8") => {
+    downloadBlob(new Blob([String(text ?? "")], { type: mime }), fileName);
+  };
+  const downloadJson = (data, fileName, indent = 2) => {
+    const text = indent === "none" ? JSON.stringify(data) : JSON.stringify(data, null, Number(indent) || 2);
+    downloadText(text, fileName, "application/json;charset=utf-8");
+  };
+  const DM_XML_HEADER = '<?xml version="1.0" encoding="UTF-8"?>';
+  const DM_XML_DEFAULT_MAXLIMIT = 3e3;
+  const toInt = (value, fallback = 0) => {
+    const num = Number(value);
+    return Number.isFinite(num) ? Math.trunc(num) : fallback;
+  };
+  const INVALID_XML_CHARS = /[\u0000-\u0008\u000B\u000C\u000E-\u001F\uFFFE\uFFFF]/g;
+  const escapeXmlText = (value) => String(value ?? "").replace(INVALID_XML_CHARS, "").replace(/&/g, "&amp;").replace(/</g, "&lt;").replace(/>/g, "&gt;");
+  const escapeXmlAttr = (value) => escapeXmlText(value).replace(/"/g, "&quot;").replace(/'/g, "&apos;");
+  const formatProgressSeconds = (progress) => {
+    const ms = Number(progress);
+    const seconds = Number.isFinite(ms) && ms > 0 ? ms / 1e3 : 0;
+    return seconds.toFixed(5);
+  };
+  const buildDanmakuPAttribute = (dm = {}) => {
+    const dmid = dm.idStr != null && dm.idStr !== "" ? String(dm.idStr) : dm.id != null ? String(dm.id) : "";
+    return [
+      formatProgressSeconds(dm.progress),
+      toInt(dm.mode, 1),
+      toInt(dm.fontsize, 25),
+      toInt(dm.color, 16777215),
+      toInt(dm.ctime, 0),
+      toInt(dm.pool, 0),
+      String(dm.midHash ?? ""),
+      dmid,
+      toInt(dm.weight, 0)
+    ].join(",");
+  };
+  const sortDanmakuList = (list) => {
+    const items = Array.isArray(list) ? [...list] : [];
+    return items.sort((a, b) => {
+      const pa = Number(a?.progress) || 0;
+      const pb = Number(b?.progress) || 0;
+      if (pa !== pb) return pa - pb;
+      const ia = String(a?.idStr ?? a?.id ?? "");
+      const ib = String(b?.idStr ?? b?.id ?? "");
+      return ia.localeCompare(ib);
+    });
+  };
+  const buildDanmakuXml = (list, meta = {}) => {
+    const items = meta.sort === false ? Array.isArray(list) ? list : [] : sortDanmakuList(list);
+    const cid = meta.cid ?? "";
+    const maxlimit = toInt(meta.maxlimit, DM_XML_DEFAULT_MAXLIMIT);
+    const state = toInt(meta.state, 0);
+    const source = meta.source ? String(meta.source) : "k-v";
+    const lines = [
+      DM_XML_HEADER,
+      "<i>",
+      "  <chatserver>chat.bilibili.com</chatserver>",
+      `  <chatid>${escapeXmlText(cid)}</chatid>`,
+      "  <mission>0</mission>",
+      `  <maxlimit>${maxlimit}</maxlimit>`,
+      `  <state>${state}</state>`,
+      "  <real_name>0</real_name>",
+      `  <source>${escapeXmlText(source)}</source>`
+    ];
+    for (const dm of items) {
+      const content = escapeXmlText(dm?.content);
+      lines.push(`  <d p="${escapeXmlAttr(buildDanmakuPAttribute(dm))}">${content}</d>`);
+    }
+    lines.push("</i>", "");
+    return lines.join("\n");
+  };
+  const pickXmlMetaFromView = (view) => ({
+    maxlimit: DM_XML_DEFAULT_MAXLIMIT,
+    state: toInt(view?.state, 0)
+  });
+  const buildDmXmlFileName = ({ index = 0, total = 0, title = "", cid = "", suffix: suffix2 = "xml" } = {}) => {
+    const safeTitle = sanitizeFileName(title, "danmaku", 60);
+    const cidPart = cid === "" || cid == null ? "" : `_${String(cid).replace(/[^0-9a-zA-Z_-]/g, "")}`;
+    const seq = Number(index) > 0 ? `${String(index).padStart(Math.max(2, String(Math.max(0, total)).length), "0")}_` : "";
+    return `${seq}${safeTitle}${cidPart}.${suffix2}`;
+  };
+  const _hoisted_1$8 = { class: "bds-dm-loader-panel" };
+  const _sfc_main$b = {
     __name: "DmDataLoaderPanel",
     props: {
       arcMgr: {
@@ -4806,7 +4906,7 @@ ${style2}
       const props2 = __props2;
       const emit2 = __emit2;
       const styleMountTarget2 = vue.inject("styleMountTarget", null);
-      mountStyle$8(styleMountTarget2);
+      mountStyle$9(styleMountTarget2);
       function toDateStr(date) {
         const y = date.getFullYear();
         const m = String(date.getMonth() + 1).padStart(2, "0");
@@ -4830,7 +4930,8 @@ ${style2}
             { label: "缩进 2", key: "json:2" },
             { label: "缩进 4", key: "json:4" }
           ]
-        }
+        },
+        { label: "XML（标准弹幕格式）", key: "xml:current" }
       ];
       const loadProgress = vue.reactive({
         visible: false,
@@ -5064,7 +5165,28 @@ ${style2}
         document.body.removeChild(a);
         URL.revokeObjectURL(url);
       };
+      const downloadDanmakuXml = () => {
+        if (!props2.dmMgr) return;
+        const list = props2.dmMgr.data?.danmaku_list || [];
+        if (!list.length) {
+          emit2("set-error", "当前没有弹幕数据，请先载入弹幕");
+          return;
+        }
+        const info = props2.dmMgr.info || props2.arcMgr?.info || {};
+        const cid = info.cid ?? props2.arcMgr?.info?.cid ?? "";
+        const xml = buildDanmakuXml(list, {
+          cid,
+          ...pickXmlMetaFromView(props2.dmMgr.data?.danmaku_view)
+        });
+        const title = info.title || props2.arcMgr?.info?.title || "";
+        downloadText(xml, buildDmXmlFileName({ title, cid }), "text/xml;charset=utf-8");
+        message.success(`已导出 ${list.length.toLocaleString()} 条弹幕（XML）`);
+      };
       const handleDownloadMenuSelect = (key) => {
+        if (key === "xml:current") {
+          downloadDanmakuXml();
+          return;
+        }
         if (key === "json:none") {
           downloadDanmakuData("none");
           return;
@@ -5122,7 +5244,7 @@ ${style2}
         const _component_n_tag = naiveUi.NTag;
         const _component_n_progress = naiveUi.NProgress;
         const _component_n_text = naiveUi.NText;
-        return vue.openBlock(), vue.createElementBlock("div", _hoisted_1$7, [
+        return vue.openBlock(), vue.createElementBlock("div", _hoisted_1$8, [
           vue.unref(showLoadWarning) ? (vue.openBlock(), vue.createBlock(_component_n_alert, {
             key: 0,
             type: "warning",
@@ -5390,6 +5512,1094 @@ ${style2}
             ]),
             _: 1
           })
+        ]);
+      };
+    }
+  };
+  const style$8 = c$3([
+    cB$2(
+      "bds-dm-collection-panel",
+      css$1`
+      display: flex;
+      flex-direction: column;
+      gap: 12px;
+    `,
+      [
+        cE$2(
+          "summary",
+          css$1`
+          padding: 6px 10px;
+        `
+        ),
+        cE$2(
+          "options",
+          css$1`
+          padding: 2px 0;
+        `
+        ),
+        cE$2(
+          "select",
+          css$1`
+          width: 240px;
+        `
+        ),
+        cE$2(
+          "number",
+          css$1`
+          width: 76px;
+        `
+        ),
+        cE$2(
+          "hint-btn",
+          css$1`
+          width: 20px;
+          height: 20px;
+          font-size: 12px;
+        `
+        ),
+        cE$2(
+          "list",
+          css$1`
+          display: flex;
+          flex-direction: column;
+          gap: 2px;
+          max-height: 320px;
+          overflow-y: auto;
+          padding: 4px;
+          border: 1px solid var(--n-border-color);
+          border-radius: 4px;
+        `
+        ),
+        cE$2(
+          "section",
+          css$1`
+          position: sticky;
+          top: 0;
+          z-index: 1;
+          padding: 4px 6px;
+          font-size: 12px;
+          opacity: 0.7;
+        `
+        ),
+        cE$2(
+          "item",
+          css$1`
+          display: flex;
+          align-items: center;
+          gap: 4px;
+          padding: 2px 6px;
+          border-radius: 4px;
+
+          &:hover {
+            background: rgba(128, 128, 128, 0.14);
+          }
+
+          &.is-current {
+            box-shadow: inset 2px 0 0 var(--n-primary-color);
+          }
+        `
+        ),
+        cE$2(
+          "item-label",
+          css$1`
+          display: flex;
+          flex: 1 1 auto;
+          align-items: center;
+          gap: 8px;
+          min-width: 0;
+          padding: 2px 0;
+          cursor: pointer;
+        `
+        ),
+        cE$2(
+          "item-link",
+          css$1`
+          flex: none;
+          opacity: 0.7;
+
+          &:hover {
+            opacity: 1;
+          }
+        `
+        ),
+        cE$2(
+          "item-index",
+          css$1`
+          min-width: 24px;
+          text-align: right;
+          opacity: 0.6;
+          font-variant-numeric: tabular-nums;
+        `
+        ),
+        cE$2(
+          "item-title",
+          css$1`
+          flex: 1 1 auto;
+          min-width: 0;
+          overflow: hidden;
+          white-space: nowrap;
+          text-overflow: ellipsis;
+        `
+        ),
+        cE$2(
+          "item-duration",
+          css$1`
+          opacity: 0.6;
+          font-variant-numeric: tabular-nums;
+        `
+        ),
+        cE$2(
+          "progress-row",
+          css$1`
+          margin-top: 4px;
+        `
+        ),
+        cE$2(
+          "progress",
+          css$1`
+          width: 240px;
+        `
+        )
+      ]
+    )
+  ]);
+  function mountStyle$8(mountTarget) {
+    useTheme$1("bds-dm-collection-panel-style", style$8, mountTarget);
+  }
+  const toNumber = (value) => {
+    const num = Number(value);
+    return Number.isFinite(num) ? num : null;
+  };
+  const toText = (value) => String(value ?? "").trim();
+  const msToSeconds = (value) => {
+    const num = toNumber(value);
+    return num == null ? 0 : Math.max(0, Math.floor(num / 1e3));
+  };
+  const finalizeCollection = (collection) => {
+    const sections = (collection?.sections || []).map((section, sectionIndex) => ({
+      id: section?.id ?? `section-${sectionIndex}`,
+      title: toText(section?.title) || `分部 ${sectionIndex + 1}`,
+      items: (Array.isArray(section?.items) ? section.items : []).filter((item) => item?.cid && item?.aid)
+    })).filter((section) => section.items.length);
+    const items = [];
+    for (const section of sections) {
+      for (const item of section.items) {
+        item.sectionTitle = section.title;
+        item.index = items.length;
+        items.push(item);
+      }
+    }
+    if (!items.length) return null;
+    const total = items.length;
+    for (const item of items) {
+      item.total = total;
+      item.key = `${item.cid}-${item.index}`;
+    }
+    const title = toText(collection.title) || "合集";
+    const panelTitle = collection.kind === "pages" ? `分P弹幕（${total} 个分P）` : `${collection.kind === "bangumi" ? "番剧弹幕" : "合集弹幕"} · ${title}（${total} 集）`;
+    return {
+      kind: collection.kind,
+      seasonId: collection.seasonId ?? null,
+      title,
+      panelTitle,
+      mid: collection.mid ?? null,
+      cover: toText(collection.cover),
+      intro: toText(collection.intro),
+      sourceLabel: collection.sourceLabel || "合集",
+      sections,
+      items,
+      total
+    };
+  };
+  const fromUgcSeason = (videoView) => {
+    const season = videoView?.ugc_season;
+    if (!season || !Array.isArray(season.sections)) return null;
+    return finalizeCollection({
+      kind: "ugc_season",
+      seasonId: toNumber(season.id),
+      title: toText(season.title) || "视频合集",
+      mid: toNumber(season.mid),
+      cover: toText(season.cover),
+      intro: toText(season.intro),
+      sourceLabel: "合集",
+      sections: season.sections.map((section, sectionIndex) => ({
+        id: section?.id ?? section?.section_id ?? `section-${sectionIndex}`,
+        title: toText(section?.title),
+        items: (Array.isArray(section?.episodes) ? section.episodes : []).map((episode, index) => ({
+          aid: toNumber(episode?.aid),
+          bvid: toText(episode?.bvid),
+          cid: toNumber(episode?.cid),
+          title: toText(episode?.title) || toText(episode?.arc?.title) || `第 ${index + 1} 集`,
+          duration: toNumber(episode?.arc?.duration) ?? 0,
+          pubtime: toNumber(episode?.arc?.pubdate),
+          cover: toText(episode?.arc?.pic)
+        }))
+      }))
+    });
+  };
+  const mapBangumiEpisode = (episode, index) => ({
+    aid: toNumber(episode?.aid),
+    bvid: toText(episode?.bvid),
+    cid: toNumber(episode?.cid),
+    epId: toNumber(episode?.ep_id ?? episode?.id),
+    title: toText(episode?.show_title) || toText(episode?.long_title) || toText(episode?.title) || `第 ${index + 1} 集`,
+    duration: msToSeconds(episode?.duration),
+    pubtime: toNumber(episode?.pub_time),
+    cover: toText(episode?.cover)
+  });
+  const fromBangumiSeason = (season) => {
+    if (!season) return null;
+    const sections = [];
+    const mainEpisodes = Array.isArray(season.episodes) ? season.episodes : [];
+    if (mainEpisodes.length) {
+      sections.push({ id: "main", title: "正片", items: mainEpisodes.map(mapBangumiEpisode) });
+    }
+    (Array.isArray(season.section) ? season.section : []).forEach((section, sectionIndex) => {
+      const episodes = Array.isArray(section?.episodes) ? section.episodes : [];
+      if (!episodes.length) return;
+      sections.push({
+        id: section?.id ?? `section-${sectionIndex}`,
+        title: toText(section?.title),
+        items: episodes.map(mapBangumiEpisode)
+      });
+    });
+    return finalizeCollection({
+      kind: "bangumi",
+      seasonId: toNumber(season.season_id),
+      title: toText(season.season_title) || "番剧",
+      mid: toNumber(season.up_info?.mid),
+      cover: toText(season.cover),
+      intro: toText(season.evaluate),
+      sourceLabel: "剧集",
+      sections
+    });
+  };
+  const fromPages = (videoView) => {
+    const pages = videoView?.pages;
+    if (!Array.isArray(pages) || pages.length < 2) return null;
+    const title = toText(videoView?.title);
+    return finalizeCollection({
+      kind: "pages",
+      seasonId: null,
+      title: title ? `${title}（分P）` : "多P视频（分P）",
+      mid: toNumber(videoView?.owner?.mid),
+      cover: toText(videoView?.pic),
+      sourceLabel: "分P",
+      sections: [
+        {
+          id: "pages",
+          title: "分P",
+          items: pages.map((page, index) => ({
+            aid: toNumber(videoView?.aid),
+            bvid: toText(videoView?.bvid),
+            cid: toNumber(page?.cid),
+            page: index + 1,
+            title: toText(page?.part) || `P${index + 1}`,
+            duration: toNumber(page?.duration) ?? 0,
+            pubtime: toNumber(videoView?.pubdate),
+            cover: toText(videoView?.pic)
+          }))
+        }
+      ]
+    });
+  };
+  const extractCollectionInfo = (arcMgr) => {
+    const data = arcMgr?.data;
+    if (!data || typeof data !== "object") return null;
+    return fromUgcSeason(data.video_view) || fromBangumiSeason(data.bangumi_season_view) || fromPages(data.video_view) || null;
+  };
+  const buildItemDanmakuInfo = (item, collection = {}) => {
+    const isBangumi = collection?.kind === "bangumi";
+    const page = Number(item?.page) || 1;
+    const epId = item?.epId ?? item?.cid;
+    let id;
+    if (isBangumi) {
+      id = `bangumi/play/ep${epId}`;
+    } else if (collection?.kind === "pages" && page > 1) {
+      id = `video/${item?.bvid}?p=${page}`;
+    } else {
+      id = `video/${item?.bvid}`;
+    }
+    return {
+      id,
+      aid: item?.aid,
+      cid: item?.cid,
+      oid: item?.aid,
+      bvid: item?.bvid,
+      type: 1,
+      duration: Number(item?.duration) || 0,
+      title: item?.title,
+      pubtime: item?.pubtime ?? void 0,
+      subtitle: collection?.title ? String(collection.title) : void 0,
+      url: isBangumi ? `https://www.bilibili.com/bangumi/play/ep${epId}` : `https://www.bilibili.com/${id}`
+    };
+  };
+  const buildItemPageUrl = (item, collection = {}) => {
+    if (collection?.kind === "bangumi") {
+      return `https://www.bilibili.com/bangumi/play/ep${item?.epId ?? item?.cid}`;
+    }
+    if (collection?.kind === "pages") {
+      return `https://www.bilibili.com/video/${item?.bvid}?p=${Number(item?.page) || 1}`;
+    }
+    return item?.bvid ? `https://www.bilibili.com/video/${item.bvid}` : "";
+  };
+  const buildCollectionFileName = (collection, ext = "zip") => `${sanitizeFileName(`${collection?.title || "collection"}_弹幕`, "collection", 80)}.${ext}`;
+  const CRC_TABLE = (() => {
+    const table = new Uint32Array(256);
+    for (let i = 0; i < 256; i += 1) {
+      let value = i;
+      for (let bit = 0; bit < 8; bit += 1) {
+        value = value & 1 ? 3988292384 ^ value >>> 1 : value >>> 1;
+      }
+      table[i] = value >>> 0;
+    }
+    return table;
+  })();
+  const textEncoder = new TextEncoder();
+  const crc32 = (bytes) => {
+    let crc = 4294967295;
+    for (let i = 0; i < bytes.length; i += 1) {
+      crc = CRC_TABLE[(crc ^ bytes[i]) & 255] ^ crc >>> 8;
+    }
+    return (crc ^ 4294967295) >>> 0;
+  };
+  const toBytes = (data) => {
+    if (data instanceof Uint8Array) return data;
+    if (data instanceof ArrayBuffer) return new Uint8Array(data);
+    if (ArrayBuffer.isView(data)) {
+      return new Uint8Array(data.buffer, data.byteOffset, data.byteLength);
+    }
+    if (typeof Blob !== "undefined" && data instanceof Blob) {
+      throw new TypeError("createZipBlob: Blob 需要先 await blob.arrayBuffer() 再传入");
+    }
+    return textEncoder.encode(String(data ?? ""));
+  };
+  const dosTime = (date) => (date.getHours() << 11 | date.getMinutes() << 5 | date.getSeconds() >> 1) & 65535;
+  const dosDate = (date) => (date.getFullYear() - 1980 << 9 | date.getMonth() + 1 << 5 | date.getDate()) & 65535;
+  const createZipBlob = (files, options = {}) => {
+    const list = Array.isArray(files) ? files.filter(Boolean) : [];
+    const now = options.date instanceof Date ? options.date : new Date();
+    const time = dosTime(now);
+    const date = dosDate(now);
+    const entries = [];
+    const chunks = [];
+    let offset = 0;
+    for (const file of list) {
+      const nameBytes = textEncoder.encode(String(file?.name || "file"));
+      const dataBytes = toBytes(file?.data);
+      const crc = crc32(dataBytes);
+      const localHeader = new Uint8Array(30 + nameBytes.length);
+      const view = new DataView(localHeader.buffer);
+      view.setUint32(0, 67324752, true);
+      view.setUint16(4, 20, true);
+      view.setUint16(6, 2048, true);
+      view.setUint16(8, 0, true);
+      view.setUint16(10, time, true);
+      view.setUint16(12, date, true);
+      view.setUint32(14, crc, true);
+      view.setUint32(18, dataBytes.length, true);
+      view.setUint32(22, dataBytes.length, true);
+      view.setUint16(26, nameBytes.length, true);
+      view.setUint16(28, 0, true);
+      localHeader.set(nameBytes, 30);
+      chunks.push(localHeader, dataBytes);
+      entries.push({ nameBytes, crc, size: dataBytes.length, offset });
+      offset += localHeader.length + dataBytes.length;
+    }
+    const centralSize = entries.reduce((sum, entry) => sum + 46 + entry.nameBytes.length, 0);
+    for (const entry of entries) {
+      const centralHeader = new Uint8Array(46 + entry.nameBytes.length);
+      const view = new DataView(centralHeader.buffer);
+      view.setUint32(0, 33639248, true);
+      view.setUint16(4, 20, true);
+      view.setUint16(6, 20, true);
+      view.setUint16(8, 2048, true);
+      view.setUint16(10, 0, true);
+      view.setUint16(12, time, true);
+      view.setUint16(14, date, true);
+      view.setUint32(16, entry.crc, true);
+      view.setUint32(20, entry.size, true);
+      view.setUint32(24, entry.size, true);
+      view.setUint16(28, entry.nameBytes.length, true);
+      view.setUint16(30, 0, true);
+      view.setUint16(32, 0, true);
+      view.setUint16(34, 0, true);
+      view.setUint16(36, 0, true);
+      view.setUint32(38, 0, true);
+      view.setUint32(42, entry.offset, true);
+      centralHeader.set(entry.nameBytes, 46);
+      chunks.push(centralHeader);
+    }
+    const commentBytes = options.comment ? textEncoder.encode(String(options.comment)) : new Uint8Array(0);
+    const endRecord = new Uint8Array(22 + commentBytes.length);
+    const endView = new DataView(endRecord.buffer);
+    endView.setUint32(0, 101010256, true);
+    endView.setUint16(4, 0, true);
+    endView.setUint16(6, 0, true);
+    endView.setUint16(8, entries.length, true);
+    endView.setUint16(10, entries.length, true);
+    endView.setUint32(12, centralSize, true);
+    endView.setUint32(16, offset, true);
+    endView.setUint16(20, commentBytes.length, true);
+    if (commentBytes.length) endRecord.set(commentBytes, 22);
+    chunks.push(endRecord);
+    return new Blob(chunks, { type: "application/zip" });
+  };
+  const uniqueZipName = (usedNames, name) => {
+    const base = String(name || "file");
+    if (!usedNames.has(base)) {
+      usedNames.add(base);
+      return base;
+    }
+    const dot = base.lastIndexOf(".");
+    const stem = dot > 0 ? base.slice(0, dot) : base;
+    const ext = dot > 0 ? base.slice(dot) : "";
+    let index = 2;
+    let next = `${stem}(${index})${ext}`;
+    while (usedNames.has(next)) {
+      index += 1;
+      next = `${stem}(${index})${ext}`;
+    }
+    usedNames.add(next);
+    return next;
+  };
+  const _hoisted_1$7 = { class: "bds-dm-collection-panel" };
+  const _hoisted_2$5 = { class: "bds-dm-collection-panel__list" };
+  const _hoisted_3$3 = {
+    key: 0,
+    class: "bds-dm-collection-panel__section"
+  };
+  const _hoisted_4$3 = { class: "bds-dm-collection-panel__item-label" };
+  const _hoisted_5 = { class: "bds-dm-collection-panel__item-index" };
+  const _hoisted_6 = ["title"];
+  const _hoisted_7 = { class: "bds-dm-collection-panel__item-duration" };
+  const _sfc_main$a = {
+    __name: "DmCollectionPanel",
+    props: {
+      arcMgr: {
+        type: Object,
+        default: null
+      },
+      dmMgr: {
+        type: Object,
+        default: null
+      },
+      collection: {
+        type: Object,
+        default: null
+      },
+      to: {
+        type: [String, Object],
+        default: void 0
+      }
+    },
+    emits: ["set-error", "update:loading"],
+    setup(__props2, { emit: __emit2 }) {
+      const props2 = __props2;
+      const emit2 = __emit2;
+      const styleMountTarget2 = vue.inject("styleMountTarget", null);
+      mountStyle$8(styleMountTarget2);
+      const BDM = vue.inject("BDM", null);
+      const message = naiveUi.useMessage();
+      const SOURCE_OPTIONS = [
+        { label: "ProtoBuf 弹幕（推荐，覆盖更全）", value: "pb" },
+        { label: "XML 实时弹幕（仅近期弹幕池）", value: "xml" },
+        { label: "ProtoBuf + XML（合并去重）", value: "both" }
+      ];
+      const FORMAT_OPTIONS = [
+        { label: "弹幕 XML（每集一个文件）", value: "xml-zip" },
+        { label: "弹幕 JSON（每集一个文件）", value: "json-zip" },
+        { label: "弹幕 JSON（合并为单文件）", value: "json-merged" }
+      ];
+      const dmSource = vue.ref(storage.get("dmCollection.source", "pb"));
+      const outputFormat = vue.ref(storage.get("dmCollection.format", "xml-zip"));
+      const concurrency = vue.ref(Number(storage.get("dmCollection.concurrency", 2)) || 2);
+      const reuseLoaded = vue.ref(storage.get("dmCollection.reuseLoaded", true));
+      const downloading = vue.ref(false);
+      const selectedKeys = vue.ref([]);
+      const itemStates = vue.reactive({});
+      const progress = vue.reactive({
+        finished: 0,
+        total: 0,
+        dmCount: 0,
+        text: "",
+        startTs: 0
+      });
+      const items = vue.computed(() => props2.collection?.items || []);
+      const sections = vue.computed(() => props2.collection?.sections || []);
+      const selectedCount = vue.computed(() => selectedKeys.value.length);
+      const currentCid = vue.computed(() => {
+        const cid = props2.dmMgr?.info?.cid;
+        return cid == null ? "" : String(cid);
+      });
+      const progressPercent = vue.computed(() => {
+        const total = Number(progress.total) || 0;
+        if (total <= 0) return 0;
+        return Math.max(0, Math.min(100, Math.floor(progress.finished / total * 100)));
+      });
+      const formatDuration = (seconds) => {
+        const total = Math.max(0, Math.floor(Number(seconds) || 0));
+        const h2 = Math.floor(total / 3600);
+        const m = Math.floor(total % 3600 / 60);
+        const s = total % 60;
+        const mm = String(m).padStart(2, "0");
+        const ss = String(s).padStart(2, "0");
+        return h2 > 0 ? `${h2}:${mm}:${ss}` : `${m}:${ss}`;
+      };
+      const isItemCurrent = (item) => currentCid.value !== "" && String(item?.cid) === currentCid.value;
+      const resetProgress = (total) => {
+        progress.finished = 0;
+        progress.total = total;
+        progress.dmCount = 0;
+        progress.text = "";
+        progress.startTs = Date.now();
+      };
+      const clearItemStates = () => {
+        Object.keys(itemStates).forEach((key) => {
+          delete itemStates[key];
+        });
+      };
+      const setItemState = (key, next) => {
+        itemStates[key] = { ...itemStates[key] || {}, ...next };
+      };
+      const resetSelection = () => {
+        selectedKeys.value = items.value.map((item) => item.key);
+        clearItemStates();
+      };
+      const selectAll = () => {
+        selectedKeys.value = items.value.map((item) => item.key);
+      };
+      const selectNone = () => {
+        selectedKeys.value = [];
+      };
+      const invertSelection = () => {
+        const selected = new Set(selectedKeys.value);
+        selectedKeys.value = items.value.filter((item) => !selected.has(item.key)).map((item) => item.key);
+      };
+      const runWithConcurrency = async (list, limit, worker) => {
+        const queue = [...list];
+        const size = Math.max(1, Math.min(Number(limit) || 1, queue.length || 1));
+        const runners = Array.from({ length: size }, async () => {
+          for (; ; ) {
+            const item = queue.shift();
+            if (!item) break;
+            await worker(item);
+          }
+        });
+        await Promise.all(runners);
+      };
+      const pickLoadedDanmaku = (item) => {
+        if (!reuseLoaded.value) return null;
+        const mgr = props2.dmMgr;
+        if (!mgr?.info?.cid || String(mgr.info.cid) !== String(item?.cid)) return null;
+        const list = mgr.data?.danmaku_list;
+        if (!Array.isArray(list) || !list.length) return null;
+        return { list: [...list], view: mgr.data?.danmaku_view || null, reused: true };
+      };
+      const fetchItemDanmaku = async (item) => {
+        const loaded = pickLoadedDanmaku(item);
+        if (loaded) return loaded;
+        if (!BDM?.BiliDanmaku) throw new Error("BDM 不可用");
+        const info = buildItemDanmakuInfo(item, props2.collection);
+        if (!info.cid || !info.aid) throw new Error("缺少 cid/aid");
+        const mgr = new BDM.BiliDanmaku(info);
+        if (dmSource.value === "pb" || dmSource.value === "both") {
+          const rise = Number(await mgr.getDmPb()) || 0;
+          if (rise < 0) throw new Error("ProtoBuf 弹幕获取失败");
+        }
+        if (dmSource.value === "xml" || dmSource.value === "both") {
+          const rise = Number(await mgr.getDmXml()) || 0;
+          if (rise < 0) throw new Error("XML 实时弹幕获取失败");
+        }
+        const list = mgr.data?.danmaku_list || [];
+        const errors = mgr.errors || {};
+        const errorCount = (errors.segments?.length || 0) + (errors.dates?.length || 0);
+        return {
+          list: [...list],
+          view: mgr.data?.danmaku_view || null,
+          reused: false,
+          partial: errorCount > 0,
+          errorCount
+        };
+      };
+      const buildItemJsonPayload = (item, result) => ({
+        info: buildItemDanmakuInfo(item, props2.collection),
+        fetchtime: Math.floor(Date.now() / 1e3),
+        danmaku_view: result.view || null,
+        commandDms: result.view?.commandDms || [],
+        danmaku_list: result.list
+      });
+      const outputSingleFile = (fileName, text, mime) => {
+        downloadText(text, fileName, mime);
+      };
+      const runDownload = async () => {
+        const collection = props2.collection;
+        if (!collection) return;
+        if (downloading.value) return;
+        if (!selectedKeys.value.length) {
+          emit2("set-error", "请先选择要下载的集");
+          return;
+        }
+        const targets = items.value.filter((item) => selectedKeys.value.includes(item.key));
+        if (!targets.length) {
+          emit2("set-error", "请先选择要下载的集");
+          return;
+        }
+        downloading.value = true;
+        emit2("update:loading", true);
+        emit2("set-error", "");
+        clearItemStates();
+        resetProgress(targets.length);
+        const mergedItems = [];
+        const zipFiles = [];
+        const usedNames = new Set();
+        let failed = 0;
+        let empty = 0;
+        try {
+          await runWithConcurrency(targets, concurrency.value, async (item) => {
+            setItemState(item.key, { status: "loading" });
+            progress.text = `正在拉取：${item.title}`;
+            try {
+              const result = await fetchItemDanmaku(item);
+              const count = result.list.length;
+              if (!count) empty += 1;
+              progress.dmCount += count;
+              setItemState(item.key, {
+                status: "done",
+                count,
+                reused: result.reused,
+                partial: result.partial,
+                errorCount: result.errorCount || 0
+              });
+              if (outputFormat.value === "json-merged") {
+                mergedItems.push({ ...buildItemJsonPayload(item, result), index: item.index + 1 });
+              } else if (outputFormat.value === "xml-zip") {
+                const meta = pickXmlMetaFromView(result.view);
+                const xml = buildDanmakuXml(result.list, { cid: item.cid, ...meta });
+                const name = uniqueZipName(
+                  usedNames,
+                  buildDmXmlFileName({
+                    index: item.index + 1,
+                    total: collection.total,
+                    title: item.title,
+                    cid: item.cid
+                  })
+                );
+                zipFiles.push({ name, data: xml });
+              } else {
+                const name = uniqueZipName(
+                  usedNames,
+                  buildDmXmlFileName({
+                    index: item.index + 1,
+                    total: collection.total,
+                    title: item.title,
+                    cid: item.cid,
+                    suffix: "json"
+                  })
+                );
+                zipFiles.push({ name, data: JSON.stringify(buildItemJsonPayload(item, result), null, 2) });
+              }
+            } catch (error) {
+              failed += 1;
+              setItemState(item.key, { status: "error", error: String(error?.message || error) });
+            } finally {
+              progress.finished += 1;
+            }
+          });
+          if (!zipFiles.length && !mergedItems.length) {
+            throw new Error("没有任何弹幕被导出，请检查所选范围");
+          }
+          if (outputFormat.value === "json-merged") {
+            const payload = {
+              collection: {
+                kind: collection.kind,
+                title: collection.title,
+                seasonId: collection.seasonId,
+                mid: collection.mid,
+                total: collection.total
+              },
+              fetchtime: Math.floor(Date.now() / 1e3),
+              items: mergedItems.sort((a, b) => a.index - b.index)
+            };
+            downloadJson(payload, buildCollectionFileName(collection, "json"), 2);
+          } else if (zipFiles.length === 1) {
+            const single = zipFiles[0];
+            const isXml = outputFormat.value === "xml-zip";
+            outputSingleFile(
+              single.name,
+              single.data,
+              isXml ? "text/xml;charset=utf-8" : "application/json;charset=utf-8"
+            );
+          } else {
+            const bodyPrefix = outputFormat.value === "xml-zip" ? "danmaku" : "data";
+            const zipBlob = createZipBlob(
+              zipFiles.map((file) => ({ name: `${bodyPrefix}/${file.name}`, data: file.data }))
+            );
+            downloadBlob(zipBlob, buildCollectionFileName(collection, "zip"));
+          }
+          const summary = [
+            `成功 ${targets.length - failed} 集`,
+            failed ? `失败 ${failed} 集` : "",
+            empty ? `空弹幕 ${empty} 集` : "",
+            `共 ${progress.dmCount.toLocaleString()} 条弹幕`
+          ].filter(Boolean).join("，");
+          if (failed) {
+            emit2("set-error", `合集弹幕下载完成：${summary}`);
+            message.warning(summary);
+          } else {
+            message.success(summary);
+          }
+        } catch (error) {
+          const msg = String(error?.message || error);
+          emit2("set-error", msg);
+          message.error(msg);
+        } finally {
+          downloading.value = false;
+          emit2("update:loading", false);
+          progress.text = "";
+        }
+      };
+      vue.watch(
+        () => props2.collection,
+        () => {
+          resetSelection();
+        },
+        { immediate: true }
+      );
+      vue.watch(selectedKeys, (value) => {
+        if (!downloading.value) clearItemStates();
+        if (!Array.isArray(value)) selectedKeys.value = [];
+      });
+      vue.watch(dmSource, (value) => storage.set("dmCollection.source", value));
+      vue.watch(outputFormat, (value) => storage.set("dmCollection.format", value));
+      vue.watch(concurrency, (value) => storage.set("dmCollection.concurrency", Number(value) || 2));
+      vue.watch(reuseLoaded, (value) => storage.set("dmCollection.reuseLoaded", Boolean(value)));
+      return (_ctx, _cache) => {
+        const _component_n_text = naiveUi.NText;
+        const _component_n_tag = naiveUi.NTag;
+        const _component_n_flex = naiveUi.NFlex;
+        const _component_n_alert = naiveUi.NAlert;
+        const _component_n_select = naiveUi.NSelect;
+        const _component_n_input_number = naiveUi.NInputNumber;
+        const _component_n_checkbox = naiveUi.NCheckbox;
+        const _component_n_icon = naiveUi.NIcon;
+        const _component_n_button = naiveUi.NButton;
+        const _component_n_tooltip = naiveUi.NTooltip;
+        const _component_n_checkbox_group = naiveUi.NCheckboxGroup;
+        const _component_n_progress = naiveUi.NProgress;
+        return vue.openBlock(), vue.createElementBlock("div", _hoisted_1$7, [
+          __props2.collection ? (vue.openBlock(), vue.createBlock(_component_n_alert, {
+            key: 0,
+            type: "info",
+            "show-icon": false,
+            class: "bds-dm-collection-panel__summary"
+          }, {
+            default: vue.withCtx(() => [
+              vue.createVNode(_component_n_flex, {
+                align: "center",
+                size: 8,
+                wrap: ""
+              }, {
+                default: vue.withCtx(() => [
+                  vue.createVNode(_component_n_text, { strong: "" }, {
+                    default: vue.withCtx(() => [
+                      vue.createTextVNode(vue.toDisplayString(__props2.collection.sourceLabel) + "：" + vue.toDisplayString(__props2.collection.title), 1)
+                    ]),
+                    _: 1
+                  }),
+                  vue.createVNode(_component_n_tag, {
+                    size: "small",
+                    type: "info"
+                  }, {
+                    default: vue.withCtx(() => [
+                      vue.createTextVNode("共 " + vue.toDisplayString(__props2.collection.total) + " 集", 1)
+                    ]),
+                    _: 1
+                  }),
+                  vue.unref(selectedCount) !== __props2.collection.total ? (vue.openBlock(), vue.createBlock(_component_n_tag, {
+                    key: 0,
+                    size: "small",
+                    type: "warning"
+                  }, {
+                    default: vue.withCtx(() => [
+                      vue.createTextVNode(" 已选 " + vue.toDisplayString(vue.unref(selectedCount)) + " 集 ", 1)
+                    ]),
+                    _: 1
+                  })) : vue.createCommentVNode("", true)
+                ]),
+                _: 1
+              })
+            ]),
+            _: 1
+          })) : vue.createCommentVNode("", true),
+          vue.createVNode(_component_n_flex, {
+            size: 12,
+            align: "center",
+            wrap: "",
+            class: "bds-dm-collection-panel__options"
+          }, {
+            default: vue.withCtx(() => [
+              vue.createVNode(_component_n_select, {
+                value: vue.unref(dmSource),
+                "onUpdate:value": _cache[0] || (_cache[0] = ($event) => vue.isRef(dmSource) ? dmSource.value = $event : null),
+                size: "small",
+                options: SOURCE_OPTIONS,
+                disabled: vue.unref(downloading),
+                class: "bds-dm-collection-panel__select",
+                to: props2.to
+              }, null, 8, ["value", "disabled", "to"]),
+              vue.createVNode(_component_n_select, {
+                value: vue.unref(outputFormat),
+                "onUpdate:value": _cache[1] || (_cache[1] = ($event) => vue.isRef(outputFormat) ? outputFormat.value = $event : null),
+                size: "small",
+                options: FORMAT_OPTIONS,
+                disabled: vue.unref(downloading),
+                class: "bds-dm-collection-panel__select",
+                to: props2.to
+              }, null, 8, ["value", "disabled", "to"]),
+              vue.createVNode(_component_n_flex, {
+                align: "center",
+                size: 4
+              }, {
+                default: vue.withCtx(() => [
+                  vue.createVNode(_component_n_text, { depth: "3" }, {
+                    default: vue.withCtx(() => [..._cache[5] || (_cache[5] = [
+                      vue.createTextVNode("并发", -1)
+                    ])]),
+                    _: 1
+                  }),
+                  vue.createVNode(_component_n_input_number, {
+                    value: vue.unref(concurrency),
+                    "onUpdate:value": _cache[2] || (_cache[2] = ($event) => vue.isRef(concurrency) ? concurrency.value = $event : null),
+                    size: "small",
+                    min: 1,
+                    max: 4,
+                    disabled: vue.unref(downloading),
+                    class: "bds-dm-collection-panel__number"
+                  }, null, 8, ["value", "disabled"])
+                ]),
+                _: 1
+              }),
+              vue.createVNode(_component_n_checkbox, {
+                checked: vue.unref(reuseLoaded),
+                "onUpdate:checked": _cache[3] || (_cache[3] = ($event) => vue.isRef(reuseLoaded) ? reuseLoaded.value = $event : null),
+                size: "small",
+                disabled: vue.unref(downloading)
+              }, {
+                default: vue.withCtx(() => [..._cache[6] || (_cache[6] = [
+                  vue.createTextVNode(" 复用已载入弹幕 ", -1)
+                ])]),
+                _: 1
+              }, 8, ["checked", "disabled"]),
+              vue.createVNode(_component_n_tooltip, {
+                trigger: "hover",
+                placement: "top",
+                to: props2.to
+              }, {
+                trigger: vue.withCtx(() => [
+                  vue.createVNode(_component_n_button, {
+                    size: "tiny",
+                    quaternary: "",
+                    circle: "",
+                    class: "bds-dm-collection-panel__hint-btn"
+                  }, {
+                    default: vue.withCtx(() => [
+                      vue.createVNode(_component_n_icon, { component: vue.unref(InfoCircle) }, null, 8, ["component"])
+                    ]),
+                    _: 1
+                  })
+                ]),
+                default: vue.withCtx(() => [
+                  _cache[7] || (_cache[7] = vue.createTextVNode(" 批量下载会连续请求多个稿件的弹幕接口，请控制并发与频率，避免触发 B 站风控。 ", -1))
+                ]),
+                _: 1
+              }, 8, ["to"])
+            ]),
+            _: 1
+          }),
+          vue.createVNode(_component_n_flex, {
+            size: 8,
+            align: "center",
+            wrap: ""
+          }, {
+            default: vue.withCtx(() => [
+              vue.createVNode(_component_n_button, {
+                size: "small",
+                disabled: vue.unref(downloading),
+                onClick: selectAll
+              }, {
+                default: vue.withCtx(() => [..._cache[8] || (_cache[8] = [
+                  vue.createTextVNode("全选", -1)
+                ])]),
+                _: 1
+              }, 8, ["disabled"]),
+              vue.createVNode(_component_n_button, {
+                size: "small",
+                disabled: vue.unref(downloading),
+                onClick: selectNone
+              }, {
+                default: vue.withCtx(() => [..._cache[9] || (_cache[9] = [
+                  vue.createTextVNode("全不选", -1)
+                ])]),
+                _: 1
+              }, 8, ["disabled"]),
+              vue.createVNode(_component_n_button, {
+                size: "small",
+                disabled: vue.unref(downloading),
+                onClick: invertSelection
+              }, {
+                default: vue.withCtx(() => [..._cache[10] || (_cache[10] = [
+                  vue.createTextVNode("反选", -1)
+                ])]),
+                _: 1
+              }, 8, ["disabled"]),
+              vue.createVNode(_component_n_button, {
+                size: "small",
+                type: "primary",
+                loading: vue.unref(downloading),
+                disabled: !vue.unref(selectedCount),
+                onClick: runDownload
+              }, {
+                default: vue.withCtx(() => [
+                  vue.createTextVNode(" 下载选中弹幕（" + vue.toDisplayString(vue.unref(selectedCount)) + "） ", 1)
+                ]),
+                _: 1
+              }, 8, ["loading", "disabled"])
+            ]),
+            _: 1
+          }),
+          vue.createVNode(_component_n_checkbox_group, {
+            value: vue.unref(selectedKeys),
+            "onUpdate:value": _cache[4] || (_cache[4] = ($event) => vue.isRef(selectedKeys) ? selectedKeys.value = $event : null)
+          }, {
+            default: vue.withCtx(() => [
+              vue.createElementVNode("div", _hoisted_2$5, [
+                (vue.openBlock(true), vue.createElementBlock(vue.Fragment, null, vue.renderList(vue.unref(sections), (section) => {
+                  return vue.openBlock(), vue.createElementBlock(vue.Fragment, {
+                    key: section.id
+                  }, [
+                    vue.unref(sections).length > 1 ? (vue.openBlock(), vue.createElementBlock("div", _hoisted_3$3, vue.toDisplayString(section.title) + "（" + vue.toDisplayString(section.items.length) + "） ", 1)) : vue.createCommentVNode("", true),
+                    (vue.openBlock(true), vue.createElementBlock(vue.Fragment, null, vue.renderList(section.items, (item) => {
+                      return vue.openBlock(), vue.createElementBlock("div", {
+                        key: item.key,
+                        class: vue.normalizeClass(["bds-dm-collection-panel__item", { "is-current": isItemCurrent(item) }])
+                      }, [
+                        vue.createElementVNode("label", _hoisted_4$3, [
+                          vue.createVNode(_component_n_checkbox, {
+                            value: item.key,
+                            disabled: vue.unref(downloading)
+                          }, null, 8, ["value", "disabled"]),
+                          vue.createElementVNode("span", _hoisted_5, vue.toDisplayString(item.index + 1), 1),
+                          vue.createElementVNode("span", {
+                            class: "bds-dm-collection-panel__item-title",
+                            title: item.title
+                          }, vue.toDisplayString(item.title), 9, _hoisted_6),
+                          vue.createElementVNode("span", _hoisted_7, vue.toDisplayString(formatDuration(item.duration)), 1),
+                          isItemCurrent(item) ? (vue.openBlock(), vue.createBlock(_component_n_tag, {
+                            key: 0,
+                            size: "small",
+                            type: "success",
+                            bordered: false
+                          }, {
+                            default: vue.withCtx(() => [..._cache[11] || (_cache[11] = [
+                              vue.createTextVNode("当前", -1)
+                            ])]),
+                            _: 1
+                          })) : vue.createCommentVNode("", true),
+                          vue.unref(itemStates)[item.key]?.status === "loading" ? (vue.openBlock(), vue.createBlock(_component_n_tag, {
+                            key: 1,
+                            size: "small",
+                            type: "info"
+                          }, {
+                            default: vue.withCtx(() => [..._cache[12] || (_cache[12] = [
+                              vue.createTextVNode("拉取中", -1)
+                            ])]),
+                            _: 1
+                          })) : vue.unref(itemStates)[item.key]?.status === "done" ? (vue.openBlock(), vue.createBlock(_component_n_tag, {
+                            key: 2,
+                            size: "small",
+                            type: "success"
+                          }, {
+                            default: vue.withCtx(() => [
+                              vue.createTextVNode(vue.toDisplayString(vue.unref(itemStates)[item.key].count.toLocaleString()) + " 条 ", 1),
+                              vue.unref(itemStates)[item.key].reused ? (vue.openBlock(), vue.createElementBlock(vue.Fragment, { key: 0 }, [
+                                vue.createTextVNode("（复用）")
+                              ], 64)) : vue.unref(itemStates)[item.key].partial ? (vue.openBlock(), vue.createElementBlock(vue.Fragment, { key: 1 }, [
+                                vue.createTextVNode("（部分失败）")
+                              ], 64)) : vue.createCommentVNode("", true)
+                            ]),
+                            _: 2
+                          }, 1024)) : vue.unref(itemStates)[item.key]?.status === "error" ? (vue.openBlock(), vue.createBlock(_component_n_tag, {
+                            key: 3,
+                            size: "small",
+                            type: "error",
+                            title: vue.unref(itemStates)[item.key].error
+                          }, {
+                            default: vue.withCtx(() => [..._cache[13] || (_cache[13] = [
+                              vue.createTextVNode("失败", -1)
+                            ])]),
+                            _: 1
+                          }, 8, ["title"])) : vue.createCommentVNode("", true)
+                        ]),
+                        vue.createVNode(_component_n_button, {
+                          size: "tiny",
+                          quaternary: "",
+                          tag: "a",
+                          href: vue.unref(buildItemPageUrl)(item, __props2.collection),
+                          target: "_blank",
+                          class: "bds-dm-collection-panel__item-link",
+                          title: "打开该集页面"
+                        }, {
+                          default: vue.withCtx(() => [..._cache[14] || (_cache[14] = [
+                            vue.createTextVNode(" 打开 ", -1)
+                          ])]),
+                          _: 1
+                        }, 8, ["href"])
+                      ], 2);
+                    }), 128))
+                  ], 64);
+                }), 128))
+              ])
+            ]),
+            _: 1
+          }, 8, ["value"]),
+          vue.unref(downloading) || vue.unref(progress).total ? (vue.openBlock(), vue.createBlock(_component_n_flex, {
+            key: 1,
+            align: "center",
+            size: 12,
+            wrap: "",
+            class: "bds-dm-collection-panel__progress-row"
+          }, {
+            default: vue.withCtx(() => [
+              vue.createVNode(_component_n_progress, {
+                type: "line",
+                percentage: vue.unref(progressPercent),
+                class: "bds-dm-collection-panel__progress"
+              }, null, 8, ["percentage"]),
+              vue.createVNode(_component_n_text, { depth: "2" }, {
+                default: vue.withCtx(() => [
+                  vue.createTextVNode(vue.toDisplayString(vue.unref(progress).finished) + "/" + vue.toDisplayString(vue.unref(progress).total) + " 集", 1)
+                ]),
+                _: 1
+              }),
+              vue.createVNode(_component_n_text, { depth: "3" }, {
+                default: vue.withCtx(() => [
+                  vue.createTextVNode("累计 " + vue.toDisplayString(vue.unref(progress).dmCount.toLocaleString()) + " 条", 1)
+                ]),
+                _: 1
+              }),
+              vue.unref(progress).text ? (vue.openBlock(), vue.createBlock(_component_n_text, {
+                key: 0,
+                depth: "3"
+              }, {
+                default: vue.withCtx(() => [
+                  vue.createTextVNode(vue.toDisplayString(vue.unref(progress).text), 1)
+                ]),
+                _: 1
+              })) : vue.createCommentVNode("", true)
+            ]),
+            _: 1
+          })) : vue.createCommentVNode("", true)
         ]);
       };
     }
@@ -10011,7 +11221,7 @@ self.onmessage = (event) => {
                   }, null, 8, ["title"])) : vue.createCommentVNode("", true),
                   vue.createVNode(_component_n_spin, { show: vue.unref(loading) }, {
                     default: vue.withCtx(() => [
-                      vue.createVNode(vue.unref(_sfc_main$b), {
+                      vue.createVNode(vue.unref(_sfc_main$c), {
                         "user-card": vue.unref(userCard),
                         "mid-hash": vue.unref(userMidHash)
                       }, null, 8, ["user-card", "mid-hash"])
@@ -10548,6 +11758,12 @@ ${doc.documentElement.outerHTML}`;
       const isListExpanded = vue.computed(() => expandedNames.value.includes("list"));
       const isInteractiveVideo = vue.computed(() => {
         return Boolean(arcMgr.value?.data?.player_info?.interaction?.graph_version);
+      });
+      const collectionInfo = vue.computed(() => {
+        if (isReadonlyMode.value) return null;
+        if (!archiveInfo.value?.id) return null;
+        if (!arcMgr.value?.data) return null;
+        return extractCollectionInfo(arcMgr.value);
       });
       const viewPoints = vue.computed(() => {
         const list = arcMgr.value?.data?.player_info?.view_points;
@@ -11414,7 +12630,7 @@ ${doc.documentElement.outerHTML}`;
                         title: `载入弹幕 ${vue.unref(dmBase).length.toLocaleString()} 条`
                       }, {
                         default: vue.withCtx(() => [
-                          !vue.unref(isReadonlyMode) ? (vue.openBlock(), vue.createBlock(vue.unref(_sfc_main$a), {
+                          !vue.unref(isReadonlyMode) ? (vue.openBlock(), vue.createBlock(vue.unref(_sfc_main$b), {
                             ref_key: "dmDataLoaderPanelRef",
                             ref: dmDataLoaderPanelRef,
                             key: vue.unref(archiveInfo).id || vue.unref(currentArchiveId2),
@@ -11428,8 +12644,24 @@ ${doc.documentElement.outerHTML}`;
                         ]),
                         _: 1
                       }, 8, ["title"]),
-                      vue.unref(commandDms).length ? (vue.openBlock(), vue.createBlock(_component_n_collapse_item, {
+                      vue.unref(collectionInfo) ? (vue.openBlock(), vue.createBlock(_component_n_collapse_item, {
                         key: 2,
+                        name: "collection",
+                        title: vue.unref(collectionInfo).panelTitle
+                      }, {
+                        default: vue.withCtx(() => [
+                          vue.createVNode(vue.unref(_sfc_main$a), {
+                            "arc-mgr": vue.unref(arcMgr),
+                            "dm-mgr": vue.unref(dmMgr),
+                            collection: vue.unref(collectionInfo),
+                            to: props2.to,
+                            onSetError: setPanelError
+                          }, null, 8, ["arc-mgr", "dm-mgr", "collection", "to"])
+                        ]),
+                        _: 1
+                      }, 8, ["title"])) : vue.createCommentVNode("", true),
+                      vue.unref(commandDms).length ? (vue.openBlock(), vue.createBlock(_component_n_collapse_item, {
+                        key: 3,
                         name: "command",
                         title: `互动弹幕 ${vue.unref(commandDms).length.toLocaleString()} 条`
                       }, {
@@ -11930,7 +13162,7 @@ ${doc.documentElement.outerHTML}`;
       const APP_MODE = vue.inject("APP_MODE", vue.ref("script"));
       const data = vue.inject("data", vue.shallowRef(null));
       const sourceUrl = vue.inject("sourceUrl", vue.shallowRef(""));
-      mountStyle$d(styleMountTarget2);
+      mountStyle$e(styleMountTarget2);
       const showPanel = vue.ref(false);
       const isScriptApp = vue.computed(() => APP_MODE.value === "script");
       const hasProvidedData = vue.computed(() => Boolean(data?.value && typeof data.value === "object"));
@@ -12118,11 +13350,11 @@ ${doc.documentElement.outerHTML}`;
                                   class: vue.normalizeClass(["bds-shell", { "bds-shell--static": !vue.unref(isScriptApp) }]),
                                   style: vue.normalizeStyle(vue.unref(shellStyle))
                                 }, [
-                                  vue.unref(isScriptApp) ? (vue.openBlock(), vue.createBlock(vue.unref(_sfc_main$e), {
+                                  vue.unref(isScriptApp) ? (vue.openBlock(), vue.createBlock(vue.unref(_sfc_main$f), {
                                     key: 0,
                                     label: vue.unref(entryLabel),
                                     onToggle: handleTogglePanel
-                                  }, null, 8, ["label"])) : (vue.openBlock(), vue.createBlock(vue.unref(_sfc_main$c), {
+                                  }, null, 8, ["label"])) : (vue.openBlock(), vue.createBlock(vue.unref(_sfc_main$d), {
                                     key: 1,
                                     "source-url": vue.unref(sourceUrl),
                                     "onUpdate:sourceUrl": _cache[0] || (_cache[0] = ($event) => vue.isRef(sourceUrl) ? sourceUrl.value = $event : null),
@@ -12131,7 +13363,7 @@ ${doc.documentElement.outerHTML}`;
                                     onOpenPanel: handleOpenPanel,
                                     onParsedData: handleParsedUploadData
                                   }, null, 8, ["source-url", "has-data", "mode"])),
-                                  vue.createVNode(vue.unref(_sfc_main$d), {
+                                  vue.createVNode(vue.unref(_sfc_main$e), {
                                     ref_key: "panelShellRef",
                                     ref: panelShellRef,
                                     show: vue.unref(showPanel),
