@@ -4,7 +4,7 @@
 // @version      3.2.0
 // @author       YHuanheg
 // @description  获取B站弹幕数据，并生成统计页面。基于 ZBpine/bili-data-statistic 修改，新增合集弹幕批量下载与 XML 格式弹幕下载。
-// @icon         https://cdn.jsdelivr.net/gh/ZBpine/bili-data-statistic@main/docs/favicon.ico
+// @icon         https://cdn.jsdelivr.net/gh/YHuanheg/bili-data-statistic@main/docs/favicon.ico
 // @match        https://www.bilibili.com/video/*
 // @match        https://www.bilibili.com/list/watchlater*
 // @match        https://www.bilibili.com/bangumi/play/*
@@ -16,7 +16,7 @@
 // @require      https://cdn.jsdelivr.net/npm/vue@3.5.31/dist/vue.global.prod.js
 // @require      data:application/javascript,%3Bwindow.Vue%3DVue%3BglobalThis.Vue%3DVue%3B
 // @require      https://cdn.jsdelivr.net/npm/naive-ui@2.44.1/dist/index.prod.js
-// @resource     staticHtml  https://cdn.jsdelivr.net/gh/ZBpine/bili-data-statistic@main/docs/index.html
+// @resource     staticHtml  https://cdn.jsdelivr.net/gh/YHuanheg/bili-data-statistic@main/docs/index.html
 // @connect      api.bilibili.com
 // @grant        GM_getResourceText
 // @grant        GM_xmlhttpRequest
@@ -10978,6 +10978,7 @@ ${percentages[params.dataIndex]}%`
   };
   const DEFAULT_CDN_PROFILE = "jsdelivr";
   const DEFAULT_CDN_BASE = CDN_BASES[DEFAULT_CDN_PROFILE];
+  const SELF_REPO_SLUG = "YHuanheg/bili-data-statistic";
   const normalizeCdnBase = (value) => {
     const text = String(value || "").trim();
     if (!text) return "";
@@ -10998,9 +10999,9 @@ ${percentages[params.dataIndex]}%`
       vueGlobalProd: buildNpmUrl(base, "vue@3/dist/vue.global.prod.js"),
       naiveUiProd: buildNpmUrl(base, "naive-ui@2/dist/index.prod.js"),
       biliDataManager: buildGhUrl(base, "ZBpine/bili-data-manager@26c45a54a832157dcdc623487102e16f5e043f56/dist/bili-data-manager.min.js"),
-      staticHtmlDefault: buildGhUrl(base, "ZBpine/bili-data-statistic@main/docs/index.html"),
-      staticHtmlCn: buildGhUrl(base, "ZBpine/bili-data-statistic@main/docs/cn/index.html"),
-      favicon: buildGhUrl(base, "ZBpine/bili-data-statistic@main/docs/favicon.ico"),
+      staticHtmlDefault: buildGhUrl(base, `${SELF_REPO_SLUG}@main/docs/index.html`),
+      staticHtmlCn: buildGhUrl(base, `${SELF_REPO_SLUG}@main/docs/cn/index.html`),
+      favicon: buildGhUrl(base, `${SELF_REPO_SLUG}@main/docs/favicon.ico`),
       echarts: buildNpmUrl(base, "echarts@6/dist/echarts.min.js"),
       echartsWordcloud: buildNpmUrl(base, "echarts-wordcloud@2/dist/echarts-wordcloud.min.js"),
       html2canvas: buildNpmUrl(base, "html2canvas@1.4.1/dist/html2canvas.min.js"),

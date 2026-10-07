@@ -6,6 +6,9 @@ export const CDN_BASES = {
 export const DEFAULT_CDN_PROFILE = 'jsdelivr';
 export const DEFAULT_CDN_BASE = CDN_BASES[DEFAULT_CDN_PROFILE];
 
+// 本脚本自身所在的仓库（fork 后静态站页面与图标改由该仓库提供）
+export const SELF_REPO_SLUG = 'YHuanheg/bili-data-statistic';
+
 const normalizeCdnBase = (value) => {
   const text = String(value || '').trim();
   if (!text) return '';
@@ -29,9 +32,9 @@ export const createCdnUrls = (profileOrBase) => {
     vueGlobalProd: buildNpmUrl(base, 'vue@3/dist/vue.global.prod.js'),
     naiveUiProd: buildNpmUrl(base, 'naive-ui@2/dist/index.prod.js'),
     biliDataManager: buildGhUrl(base, 'ZBpine/bili-data-manager@26c45a54a832157dcdc623487102e16f5e043f56/dist/bili-data-manager.min.js'),
-    staticHtmlDefault: buildGhUrl(base, 'ZBpine/bili-data-statistic@main/docs/index.html'),
-    staticHtmlCn: buildGhUrl(base, 'ZBpine/bili-data-statistic@main/docs/cn/index.html'),
-    favicon: buildGhUrl(base, 'ZBpine/bili-data-statistic@main/docs/favicon.ico'),
+    staticHtmlDefault: buildGhUrl(base, `${SELF_REPO_SLUG}@main/docs/index.html`),
+    staticHtmlCn: buildGhUrl(base, `${SELF_REPO_SLUG}@main/docs/cn/index.html`),
+    favicon: buildGhUrl(base, `${SELF_REPO_SLUG}@main/docs/favicon.ico`),
     echarts: buildNpmUrl(base, 'echarts@6/dist/echarts.min.js'),
     echartsWordcloud: buildNpmUrl(base, 'echarts-wordcloud@2/dist/echarts-wordcloud.min.js'),
     html2canvas: buildNpmUrl(base, 'html2canvas@1.4.1/dist/html2canvas.min.js'),
