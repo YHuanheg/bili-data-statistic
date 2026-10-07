@@ -50,10 +50,11 @@ export default defineConfig(({ command }) => {
     monkey({
       entry: 'src/main.js',
       userscript: {
-        name: 'B站弹幕统计',
+        name: 'B站弹幕统计（增强版）',
         version: appVersion,
-        namespace: 'https://github.com/ZBpine/bili-data-statistic',
-        description: '获取B站弹幕数据，并生成统计页面。',
+        namespace: 'https://github.com/YHuanheg/bili-data-statistic',
+        author: 'YHuanheg',
+        description: '获取B站弹幕数据，并生成统计页面。基于 ZBpine/bili-data-statistic 修改，新增合集弹幕批量下载与 XML 格式弹幕下载。',
         icon: cdnUrls.favicon,
         match: userscriptMatch,
         grant: ['GM_xmlhttpRequest', 'GM_getResourceText', 'unsafeWindow'],

@@ -1,8 +1,9 @@
 // ==UserScript==
-// @name         B站弹幕统计
-// @namespace    https://github.com/ZBpine/bili-data-statistic
-// @version      3.1.5
-// @description  获取B站弹幕数据，并生成统计页面。
+// @name         B站弹幕统计（增强版）
+// @namespace    https://github.com/YHuanheg/bili-data-statistic
+// @version      3.2.0
+// @author       YHuanheg
+// @description  获取B站弹幕数据，并生成统计页面。基于 ZBpine/bili-data-statistic 修改，新增合集弹幕批量下载与 XML 格式弹幕下载。
 // @icon         https://cdn.jsdmirror.com/gh/ZBpine/bili-data-statistic@main/docs/favicon.ico
 // @match        https://www.bilibili.com/video/*
 // @match        https://www.bilibili.com/list/watchlater*
